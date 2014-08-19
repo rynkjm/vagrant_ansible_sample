@@ -1,0 +1,11 @@
+---
+- name: Install  Nginx
+  hosts: jenkins
+  user: vagrant
+  # remote_user: user
+  sudo: yes
+
+  roles:
+    - common
+    - jenkins
+    - nginx
